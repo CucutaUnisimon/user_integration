@@ -63,7 +63,9 @@ public class ManagerUserGraph {
         PasswordProfile passwordProfile = new PasswordProfile();
         passwordProfile.password = password;
         passwordProfile.forceChangePasswordNextSignIn = false;
-
+        System.out.println(displayName);
+        System.out.println(username);
+        System.out.println(email);
         User user = new User();
         user.accountEnabled = true;
         user.displayName = displayName;

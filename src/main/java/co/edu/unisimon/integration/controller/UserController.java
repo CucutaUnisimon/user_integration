@@ -27,4 +27,21 @@ public class UserController {
 		
     }
 	
+	
+	@PostMapping("/change_pass_docente")
+    public ResponseEntity<Map<String, Object>> checkUserDocente(@RequestBody UserRequest request) {
+		
+        
+		String username = request.getUsername();
+		String password = request.getPassword();
+		String documento = request.getDocumento();
+		
+		System.out.println(username);
+		System.out.println(documento);
+		
+		
+		return userService.createDocente(username, password, documento);
+		
+    }
+	
 }

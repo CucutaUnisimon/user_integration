@@ -24,5 +24,7 @@ public class HealthController {
         logger.warn("Advertencia: recurso casi agotado");
 		return "Ok";
 	}
+	
+
 
 }
